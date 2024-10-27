@@ -7,10 +7,10 @@
 }
 
 .simply-countdown > .simply-section {
-  width: 35%; /* Slightly increase width for better fit */
-  max-width: 180px; /* Increase max-width for larger screens */
+  width: 50%; /* Meningkatkan lebar menjadi 50% */
+  max-width: 250px; /* Meningkatkan max-width menjadi 250px */
   height: auto; /* Tinggi otomatis sesuai konten */
-  padding: 15px; /* Mengurangi padding untuk ruang lebih sedikit */
+  padding: 20px; /* Meningkatkan padding untuk ruang lebih banyak */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,8 +43,8 @@
   }
 
   .simply-countdown > .simply-section {
-    width: 45%; /* Increase width for tablets */
-    max-width: 150px; /* Adjust max-width accordingly */
+    width: 60%; /* Meningkatkan lebar untuk tablet */
+    max-width: 200px; /* Menyesuaikan max-width */
   }
 
   .simply-countdown > .simply-section .simply-amount {
@@ -63,8 +63,8 @@
   }
 
   .simply-countdown > .simply-section {
-    width: 60%; /* Increase width for small phones */
-    max-width: 120px; /* Adjust max-width for better fit */
+    width: 70%; /* Meningkatkan lebar untuk ponsel kecil */
+    max-width: 150px; /* Menyesuaikan max-width untuk ponsel kecil */
   }
 
   .simply-countdown > .simply-section .simply-amount {
@@ -84,7 +84,7 @@
 
   .simply-countdown > .simply-section {
     width: 100%; /* Lebar penuh untuk layar sangat kecil */
-    max-width: 90px; /* Adjust max-width for very small screens */
+    max-width: 90px; /* Menyesuaikan max-width untuk layar sangat kecil */
   }
 
   .simply-countdown > .simply-section .simply-amount {
