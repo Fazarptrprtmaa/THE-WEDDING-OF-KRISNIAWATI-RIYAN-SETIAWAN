@@ -7,8 +7,8 @@
 }
 
 .simply-countdown > .simply-section {
-  width: 30%; /* Ukuran lebih kecil untuk responsivitas */
-  max-width: 150px; /* Ukuran maksimum yang lebih kecil */
+  width: 35%; /* Slightly increase width for better fit */
+  max-width: 180px; /* Increase max-width for larger screens */
   height: auto; /* Tinggi otomatis sesuai konten */
   padding: 15px; /* Mengurangi padding untuk ruang lebih sedikit */
   display: flex;
@@ -34,7 +34,6 @@
 .simply-countdown > .simply-section .simply-word {
   font-size: 1.5rem; /* Ukuran label lebih kecil */
   text-transform: lowercase;
-  text-align: center;
 }
 
 /* Media query untuk tablet dan ponsel besar */
@@ -44,8 +43,8 @@
   }
 
   .simply-countdown > .simply-section {
-    width: 40%; /* Lebar yang disesuaikan untuk tablet */
-    max-width: 130px; /* Ukuran maksimum yang disesuaikan */
+    width: 45%; /* Increase width for tablets */
+    max-width: 150px; /* Adjust max-width accordingly */
   }
 
   .simply-countdown > .simply-section .simply-amount {
@@ -64,8 +63,8 @@
   }
 
   .simply-countdown > .simply-section {
-    width: 55%; /* Lebar yang disesuaikan untuk ponsel kecil */
-    max-width: 100px; /* Ukuran maksimum yang disesuaikan */
+    width: 60%; /* Increase width for small phones */
+    max-width: 120px; /* Adjust max-width for better fit */
   }
 
   .simply-countdown > .simply-section .simply-amount {
@@ -85,7 +84,7 @@
 
   .simply-countdown > .simply-section {
     width: 100%; /* Lebar penuh untuk layar sangat kecil */
-    max-width: 80px; /* Ukuran maksimum yang lebih kecil */
+    max-width: 90px; /* Adjust max-width for very small screens */
   }
 
   .simply-countdown > .simply-section .simply-amount {
