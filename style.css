@@ -389,7 +389,7 @@ footer li {
   }
 }
 
-<!-- CSS untuk animasi hover pada gambar -- > <style > .hover-zoom {
+.hover-zoom {
   transition: transform 0.3s ease;
 }
 .hover-zoom:hover {
