@@ -75,47 +75,42 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-          <h2>Acara Pernikahan</h2>
-          <h3>Diselenggarakan pada Minggu, 17 November 2024 di Bogor, Jawa Barat.</h3>
-          <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Saudara/i, untuk hadir pada acara pernikahan kami. </p>
-        </div>
+          <h2 class="fade-in" id="wedding-event">Acara Pernikahan</h2>
+          <h3 class="fade-in" id="wedding-date">Diselenggarakan pada Minggu, 17 November 2024 di Bogor, Jawa Barat.</h3>
+          <p class="fade-in" id="invitation">Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Saudara/i, untuk hadir pada acara pernikahan kami.</p>
       </div>
+  </div>
+</div>
 
       <div class="row couple">
         <div class="col-lg-6">
           <div class="row">
             <div class="col-8 text-end">
-              <h3>Riyan Setiawa ( koy-koy )</h3>
-              <p>Our Special Day</p>
-              <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”</p>
-              <p>( QS. Ar-Rum 21 )</p>
-              <p>Putra Kedua dari : <br> Bapak Agus Setiawan <br> & <br> Ibu Yani</p>
-            </div>
-            <div class="col-4">
-              
-            </div>
+              <h3 class="fade-in">Riyan Setiawa ( koy-koy )</h3>
+              <p class="fade-in">Our Special Day</p>
+              <p class="fade-in">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”</p>
+              <p class="fade-in">( QS. Ar-Rum 21 )</p>
+              <p class="fade-in">Putra Kedua dari : <br> Bapak Agus Setiawan <br> & <br> Ibu Yani</p>
           </div>
-        </div>
-
-        
-
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-4">
-              
-            </div>
-            <div class="col-8">
-              <h3>Krisniawati ( nianayy )</h3>
-              <p>"Dan nikahkanlah orang-orang yang sendirian di antara kamu, dan orang-orang yang layak (menikah) dari hamba sahayamu yang lelaki dan hamba-hamba sahayamu yang perempuan. jika mereka miskin Allah akan mengkayakan mereka dengan karunianya. Dan Allah Maha Luas (pemberiannya) dan Maha Mengetahui." </p>
-             <p>(QS. An Nuur (24) : 32)</p>
-              <p>Putri Kelima dari : <br> Bapak Sunardi ( Alm ) <br> & <br> Ibu Cicih</p>
-            </div>
+          <div class="col-4">
           </div>
-        </div>
       </div>
-    </div>
-  </section>
+  </div>
 
+  <div class="col-lg-6">
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-8">
+            <h3 class="fade-in">Krisniawati ( nianayy )</h3>
+            <p class="fade-in">"Dan nikahkanlah orang-orang yang sendirian di antara kamu, dan orang-orang yang layak (menikah) dari hamba sahayamu yang lelaki dan hamba-hamba sahayamu yang perempuan. jika mereka miskin Allah akan mengkayakan mereka dengan karunianya. Dan Allah Maha Luas (pemberiannya) dan Maha Mengetahui."</p>
+            <p class="fade-in">(QS. An Nuur (24) : 32)</p>
+            <p class="fade-in">Putri Kelima dari : <br> Bapak Sunardi ( Alm ) <br> & <br> Ibu Cicih</p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
 
   <section id="info" class="info">
     <div class="container">
@@ -415,6 +410,28 @@
     });
 
   </script>
+
+<script>
+  // Fungsi untuk menambahkan kelas 'visible' saat elemen terlihat
+  function handleScroll() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach((element, index) => {
+          const rect = element.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+              element.classList.add('visible');
+              // Menambahkan delay untuk setiap elemen
+              setTimeout(() => {
+                  element.classList.add('visible');
+              }, index * 200); // 200 ms delay untuk setiap elemen
+          }
+      });
+  }
+
+  // Menambahkan event listener untuk scroll
+  window.addEventListener('scroll', handleScroll);
+  // Memanggil fungsi untuk menampilkan elemen yang sudah terlihat saat halaman dimuat
+  handleScroll();
+</script>
 
   <script>
     const rootElement = document.querySelector(":root");
