@@ -137,6 +137,48 @@ body {
   transform: translateY(0);
 }
 
+.info .card.fade-in {
+  transition: all 2.5s ease-in-out;
+  transform: translateY(50px);
+}
+
+.info .card.fade-in.visible {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Efek tambahan untuk card */
+.info .card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Animasi untuk ikon */
+.info .card i {
+  transition: transform 0.3s ease;
+}
+
+.info .card:hover i {
+  transform: scale(1.2);
+}
+
+/* Animasi untuk tombol */
+.info .btn {
+  transition: all 0.3s ease;
+}
+
+.info .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .info {
   background-color: var(--bg);
   color: white;
@@ -298,7 +340,6 @@ body {
   left: -13px;
   right: auto;
 }
-
 .gallery {
   background-color: #f5f5f5;
   /* Efek saat halaman dimuat */
